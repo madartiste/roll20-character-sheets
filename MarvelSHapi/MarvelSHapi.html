@@ -651,29 +651,29 @@
                     <div class="sheet-item sheet-med"><input type="text" name="attr_Power_Name" /></div>
                     <div class="sheet-item sheet-small"><input type="number" name="attr_Fighting_roll" /></div> 
                     <div class="sheet-item sheet-med">
-                        <select name="attr_power_rank_#">
-                            <option value="_"></option>
-        					<option value="Shift-0">Shift-0</option>
-							<option value="Feeble">Feeble</option>
-							<option value="Poor">Poor</option>
-							<option value="Typical">Typical</option>
-							<option value="Good">Good</option>
-							<option value="Excellent">Excellent</option>
-							<option value="Remarkable">Remarkable</option>
-							<option value="Incredible">Incredible</option>
-							<option value="Amazing">Amazing</option>
-							<option value="Monstrous">Monstrous</option>
-							<option value="Unearthly">Unearthly</option>
-							<option value="Shift-X">Shift-X</option>
-							<option value="Shift-Y">Shift-Y</option>
-							<option value="Shift-Z">Shift-Z</option>
-							<option value="Cl1000">Class 1000</option>
-							<option value="Cl3000">Class 3000</option>
-							<option value="Cl5000">Class 5000</option>
-							<option value="Beyond">Beyond</option>							
+                        <select name="attr_power_rank">
+                        	<option value="_"></option>
+        			<option value="Shift-0">Shift-0</option>
+				<option value="Feeble">Feeble</option>
+				<option value="Poor">Poor</option>
+				<option value="Typical">Typical</option>
+				<option value="Good">Good</option>
+				<option value="Excellent">Excellent</option>
+				<option value="Remarkable">Remarkable</option>
+				<option value="Incredible">Incredible</option>
+				<option value="Amazing">Amazing</option>
+				<option value="Monstrous">Monstrous</option>
+				<option value="Unearthly">Unearthly</option>
+				<option value="Shift-X">Shift-X</option>
+				<option value="Shift-Y">Shift-Y</option>
+				<option value="Shift-Z">Shift-Z</option>
+				<option value="Cl1000">Class 1000</option>
+				<option value="Cl3000">Class 3000</option>
+				<option value="Cl5000">Class 5000</option>
+				<option value="Beyond">Beyond</option>							
                         </select>                        
                     </div>
-                    <div class="sheet-item sheet-small"><input type="number" name="attr_Power" value="@Power_#"/></div>
+                    <div class="sheet-item sheet-small"><input type="number" name="attr_Power" value="@Power"/></div>
                 </div>
                 <textarea name="attr_description" title="repeating_Powers_description">Description</textarea>
                 <div class="sheet-header">
@@ -702,7 +702,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{power_rank_#} @{CS} @{TypePower} @{character_id}' name='roll_PowerCheck' /></div>
+                <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{power_rank} @{CS} @{TypePower} @{character_id}' name='roll_PowerCheck' /></div>
         	<div class="sheet-row">
             </fieldset>
         </div>
