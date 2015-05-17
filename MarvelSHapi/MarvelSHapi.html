@@ -651,7 +651,7 @@
                     <div class="sheet-item sheet-med"><input type="text" name="attr_Power_Name" /></div>
                     <div class="sheet-item sheet-small"><input type="number" name="attr_Fighting_roll" /></div> 
                     <div class="sheet-item sheet-med">
-                        <select name="attr_fighting_value">
+                        <select name="attr_power_rank_#">
                             <option value="_"></option>
         					<option value="Shift-0">Shift-0</option>
 							<option value="Feeble">Feeble</option>
@@ -673,7 +673,7 @@
 							<option value="Beyond">Beyond</option>							
                         </select>                        
                     </div>
-                    <div class="sheet-item sheet-small"><input type="number" name="attr_Power" value="@Power"/></div>
+                    <div class="sheet-item sheet-small"><input type="number" name="attr_Power" value="@Power_#"/></div>
                 </div>
                 <textarea name="attr_description" title="repeating_Powers_description">Description</textarea>
                 <div class="sheet-header">
@@ -702,7 +702,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{fighting_value} @{CS} @{TypePower} @{character_id}' name='roll_PowerCheck' /></div>
+                <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{power_rank_#} @{CS} @{TypePower} @{character_id}' name='roll_PowerCheck' /></div>
         	<div class="sheet-row">
             </fieldset>
         </div>
