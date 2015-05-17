@@ -70,8 +70,8 @@ on("chat:message", function(msg) {
             default:
                 rankCol = input[1];            
         }
-		
-		var colShift = parseInt(input[2]);
+        
+    	var colShift = parseInt(input[2]);
         var attResult;
         
         var rankIndex = rankColumns.indexOf(rankCol);
@@ -131,20 +131,38 @@ on("chat:message", function(msg) {
         } else {    
             if (rollResult < rollColumn.startgreen) {
                 attack(0);
-                sendChat (msg.who, "&{template:marvel} {{rollname=" + who + "}} {{rollcolumn=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{rollresult=" + rollResult + "}}{{colorresult=<span style=\"padding:2px 5px; background-color:white;font-weight:bold;\">WHITE</span>" + attackTypeString + "}}");
+                /*USE DEFAULT ROLL TEMPLATE*/
+                //sendChat (msg.who, "&{template:default} {{name=" + who + "}} {{Column=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{Roll=" + rollResult + "}}{{Result=<span style=\"padding:2px 5px; background-color:white;font-weight:bold;\">WHITE</span>" + attackTypeString + "}}");
+                /*USE NO ROLL TEMPLATE*/
                 //sendChat(msg.who, rankColumns[rollColumnIndex].toUpperCase() + " column: " + rollResult + " is a <span style=\"padding:2px 5px; background-color:white;font-weight:bold;\">WHITE</span> result" + attackTypeString);
+                /*USE MARVEL THEMED ROLL TEMPATE FROM CHARACTER SHEET*/
+                sendChat (msg.who, "&{template:marvel} {{rollname=" + who + "}} {{rollcolumn=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{rollresult=" + rollResult + "}}{{colorresult=<span style=\"padding:2px 5px; background-color:white;font-weight:bold;\">WHITE</span>" + attackTypeString + "}}");   
             } else if (rollResult >= rollColumn.startgreen && rollResult < rollColumn.startyellow) {
                 attack(1);
-                sendChat (msg.who, "&{template:marvel} {{rollname=" + who + "}} {{rollcolumn=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{rollresult=" + rollResult + "}}{{colorresult=<span style=\"padding:2px 5px; color: white;background-color:green;font-weight:bold;\">GREEN</span>" + attackTypeString + "}}");
+                /*USE DEFAULT ROLL TEMPLATE*/
+                //sendChat (msg.who, "&{template:default} {{name=" + who + "}} {{Column=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{Roll=" + rollResult + "}}{{Result=<span style=\"padding:2px 5px; color: white;background-color:green;font-weight:bold;\">GREEN</span>" + attackTypeString + "}}");
+                /*USE NO ROLL TEMPLATE*/
                 //sendChat(msg.who, rankColumns[rollColumnIndex].toUpperCase() + " column: " + rollResult + " is a <span style=\"padding:2px 5px; color: white;background-color:green;font-weight:bold;\">GREEN</span> result" + attackTypeString);
+                /*USE MARVEL THEMED ROLL TEMPATE FROM CHARACTER SHEET*/
+                sendChat (msg.who, "&{template:marvel} {{rollname=" + who + "}} {{rollcolumn=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{rollresult=" + rollResult + "}}{{colorresult=<span style=\"padding:2px 5px; color: white;background-color:green;font-weight:bold;\">GREEN</span>" + attackTypeString + "}}");
+            
             } else if (rollResult >= rollColumn.startyellow && rollResult < rollColumn.startred) {
                 attack(2);
-                sendChat (msg.who, "&{template:marvel} {{rollname=" + who + "}} {{rollcolumn=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{rollresult=" + rollResult + "}}{{colorresult=<span style=\"padding:2px 5px; background-color:yellow;font-weight:bold;\">YELLOW</span>" + attackTypeString + "}}");
+                /*USE DEFAULT ROLL TEMPLATE*/
+                //sendChat (msg.who, "&{template:default} {{name==" + who + "}} {{Column=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{Roll=" + rollResult + "}}{{Result=<span style=\"padding:2px 5px; background-color:yellow;font-weight:bold;\">YELLOW</span>" + attackTypeString + "}}");
+                /*USE NO ROLL TEMPLATE*/
                 //sendChat(msg.who, rankColumns[rollColumnIndex].toUpperCase() + " column: " + rollResult + " is a <span style=\"padding:2px 5px; background-color:yellow;font-weight:bold;\">YELLOW</span> result" + attackTypeString);
+                /*USE MARVEL THEMED ROLL TEMPATE FROM CHARACTER SHEET*/
+                sendChat (msg.who, "&{template:marvel} {{rollname=" + who + "}} {{rollcolumn=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{rollresult=" + rollResult + "}}{{colorresult=<span style=\"padding:2px 5px; background-color:yellow;font-weight:bold;\">YELLOW</span>" + attackTypeString + "}}");
+            
             } else if (rollResult >= rollColumn.startred) {
                 attack(3);
-                sendChat (msg.who, "&{template:marvel} {{rollname=" + who + "}} {{rollcolumn=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{rollresult=" + rollResult + "}}{{colorresult=<span style=\"padding:2px 5px; color: white;background-color:red;font-weight:bold;\">RED</span>" + attackTypeString + "}}");
+                /*USE DEFAULT ROLL TEMPLATE*/
+                //sendChat (msg.who, "&{template:default} {{name==" + who + "}} {{Column=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{Roll=" + rollResult + "}}{{Result=<span style=\"padding:2px 5px; color: white;background-color:red;font-weight:bold;\">RED</span>" + attackTypeString + "}}");
+                /*USE NO ROLL TEMPLATE*/
                 //sendChat(msg.who, rankColumns[rollColumnIndex].toUpperCase() + " column: " + rollResult + " is a <span style=\"padding:2px 5px; color: white;background-color:red;font-weight:bold;\">RED</span> result" + attackTypeString);
+                /*USE MARVEL THEMED ROLL TEMPATE FROM CHARACTER SHEET*/
+                sendChat (msg.who, "&{template:marvel} {{rollname=" + who + "}} {{rollcolumn=" + rankColumns[rollColumnIndex].toUpperCase() + "}} {{rollresult=" + rollResult + "}}{{colorresult=<span style=\"padding:2px 5px; color: white;background-color:red;font-weight:bold;\">RED</span>" + attackTypeString + "}}");            
             };  
         };
     }
