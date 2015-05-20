@@ -113,7 +113,7 @@
                 </div>
                 <div class="sheet-doublerow">
             <div class="sheet-baseinfo sheet-topline sheet-thirtypercent"><input type="text" name="attr_Occupation" /><label>Occupation</label></div>
-		</div>	
+    	</div>	
             </div>
     </div>        
         <!-- Weakness Info -->
@@ -204,7 +204,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>                                
                             </div>
-                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VFighting} @{CSFighting} @{TypeFighting} @{character_id}' name='roll_FightingCheck' /></div>
+                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VFighting} @{CSFighting} @{TypeFighting} --roll:Fighting --id:@{character_id}' name='roll_FightingCheck' /></div>
                         </div>
                         <div class="sheet-row">
                             <div class="sheet-item sheet-small"><label>Agility:</label></div>
@@ -254,7 +254,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VAgility} @{CSAgility} @{TypeAgility} @{character_id}' name='roll_AgilityCheck' /></div>
+                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VAgility} @{CSAgility} @{TypeAgility} --roll:Agility --id:@{character_id}' name='roll_AgilityCheck' /></div>
                         </div>
                         <div class="sheet-row">
                             <div class="sheet-item sheet-small"><label>Strength:</label></div>
@@ -304,7 +304,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VStrength} @{CSStrength} @{TypeStrength} @{character_id}' name='roll_StrengthCheck' /></div>
+                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VStrength} @{CSStrength} @{TypeStrength} --roll:Strength --id:@{character_id}' name='roll_StrengthCheck' /></div>
                         </div>
                         <div class="sheet-row">
                             <div class="sheet-item sheet-small"><label>Endurance:</label></div>
@@ -354,7 +354,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VEndurance} @{CSEndurance} @{TypeEndurance} @{character_id}' name='roll_EnduranceCheck' /></div>
+                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VEndurance} @{CSEndurance} @{TypeEndurance} --roll:Endurance --id:@{character_id}' name='roll_EnduranceCheck' /></div>
                         </div>
                         <div class="sheet-row">
                             <div class="sheet-item sheet-small"><label>Reason:</label></div>
@@ -404,7 +404,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VReason} @{CSReason} @{TypeReason} @{character_id}' name='roll_ReasonCheck' /></div>
+                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VReason} @{CSReason} @{TypeReason} --roll:Reason --id:@{character_id}' name='roll_ReasonCheck' /></div>
                         </div>
                         <div class="sheet-row">
                             <div class="sheet-item sheet-small"><label>Intuition:</label></div>
@@ -454,7 +454,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VIntuition} @{CSIntuition} @{TypeIntuition} @{character_id}' name='roll_IntuitionCheck' /></div>
+                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VIntuition} @{CSIntuition} @{TypeIntuition} --roll:Intuition --id:@{character_id}' name='roll_IntuitionCheck' /></div>
                         </div>
                         <div class="sheet-row">
                             <div class="sheet-item sheet-small"><label>Psyche:</label></div>
@@ -504,7 +504,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VPsyche} @{CSPsyche} @{TypePsyche} @{character_id}' name='roll_PsycheCheck' /></div>
+                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VPsyche} @{CSPsyche} @{TypePsyche} --roll:Psyche --id:@{character_id}' name='roll_PsycheCheck' /></div>
                         </div>
                         <div class="sheet-row">
                             <div class="sheet-item sheet-small"><label>Popularity:</label></div>
@@ -554,7 +554,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VPopularity} @{CSPopularity} @{TypePopularity} @{character_id}' name='roll_PopularityCheck' /></div>
+                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VPopularity} @{CSPopularity} @{TypePopularity} --roll:Popularity --id:@{character_id}' name='roll_PopularityCheck' /></div>
                         </div>
                         <div class="sheet-row">
                             <div class="sheet-item sheet-small"><label>Resources:</label></div>
@@ -604,7 +604,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VResources} @{CSResources} @{TypeResources} @{character_id}' name='roll_ResourcesCheck' /></div>
+                            <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{VResources} @{CSResources} @{TypeResources} --roll:Resources --id:@{character_id}' name='roll_ResourcesCheck' /></div>
                         </div>
                     </div>
         </div>
@@ -702,7 +702,7 @@
                                 <option value="Slam">Slam?</option>
                                 <option value="Kill">Kill?</option>
                             </div>
-                <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{power_rank} @{CS} @{TypePower} @{character_id}' name='roll_PowerCheck' /></div>
+                <div class="sheet-item sheet-puny"><button type='roll' value='!ut @{fighting_value} @{CS} @{TypePower} --roll:@{Power_Name} --id:@{character_id}' name='roll_PowerCheck' /></div>
         	<div class="sheet-row">
             </fieldset>
         </div>
@@ -735,9 +735,17 @@
 <!-- Primary Roll Template -->
 <rolltemplate class="sheet-rolltemplate-marvel">
     <table>
-    	<tr><th>{{rollname}}</th></tr>
-		<tr><td><span class="tcat">Column: </span>{{rollcolumn}}</td></tr>		
-		<tr><td><span class="tcat">Roll: </span>{{rollresult}}</td></tr>
-        <tr><td><span class="tcat">Result: </span>{{colorresult}}</td></tr>
+    	<tr><th colspan="2">{{rollname}}<br />
+        <span class="sheet-template-subhead">{{#rolltype}}
+            {{rolltype}}
+        {{/rolltype}}</span></th></tr>        
+        {{#attacktype}}
+            <tr><td class="tcat">Type:</td><td>{{attacktype}}</td></tr>
+        {{/attacktype}}
+		<tr><td  class="tcat">Column:</td><td>{{rollcolumn}}</td></tr>		
+		<tr><td  class="tcat">Roll:</td><td>{{rollresult}}</td></tr>
+        {{#colorresult}}
+        <tr><td  class="tcat">Result:</td><td>{{colorresult}}</td></tr>
+        {{/colorresult}}
     </table>
 </rolltemplate>
