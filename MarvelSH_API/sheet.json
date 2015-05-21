@@ -1,7 +1,7 @@
 {
 	"html": "MarvelSHapi.html",
 	"css": "MarvelSHapi.css",
-	"authors": "Michael R., Sarah A.",
+	"authors": "Michael R. (Creator of original sheet), Sarah A. (Modified sheet for use with API)",
 	"roll20userid": "34900,52234",
 	"preview": "MarvelSHPreview.jpg",
 	"instructions": "This character sheet is made to be used with an api script to automate rolling on the Universal Table.  It also includes a Roll Template to format the api rolls."
