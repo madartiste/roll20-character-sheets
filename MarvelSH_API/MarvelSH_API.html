@@ -736,13 +736,16 @@
 <rolltemplate class="sheet-rolltemplate-marvel">
     <table>
     	<tr><th colspan="2">{{rollname}}<br />
-        <span class="sheet-template-subhead">{{#rolltype}}
-            {{rolltype}}
-        {{/rolltype}}</span></th></tr>        
+            {{#rolltype}}
+                <span class="sheet-template-subhead">{{rolltype}}</span>
+            {{/rolltype}}      
+        </th></tr>        
         {{#attacktype}}
             <tr><td class="tcat">Type:</td><td>{{attacktype}}</td></tr>
         {{/attacktype}}
-		<tr><td  class="tcat">Column:</td><td>{{rollcolumn}}</td></tr>		
+        {{#rollcolumn}}
+		    <tr><td  class="tcat">Column:</td><td>{{rollcolumn}}</td></tr>
+        {{/rollcolumn}}
 		<tr><td  class="tcat">Roll:</td><td>{{rollresult}}</td></tr>
         {{#colorresult}}
         <tr><td  class="tcat">Result:</td><td>{{colorresult}}</td></tr>
